@@ -1,0 +1,25 @@
+robominer:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+
+  # Position Controllers ---------------------------------------
+  FR_screw_velocity_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: FR_screw_cont
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FL_screw_velocity_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: FL_screw_cont
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  BR_screw_velocity_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: BR_screw_cont
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  BL_screw_velocity_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: BL_screw_cont
+    pid: {p: 100.0, i: 0.01, d: 10.0}  
+

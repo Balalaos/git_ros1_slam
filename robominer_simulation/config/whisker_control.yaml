@@ -1,0 +1,334 @@
+robominer:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 30  
+
+# # Position Controllers ---------------------------------------
+#   plate_1_whisker_controller:
+#     type: effort_controllers/JointGroupPositionController
+#     joints: 
+#       - flex_base_joint_1_11
+#       - flex_base_joint_1_12
+#       - flex_base_joint_1_13
+#       - flex_base_joint_1_14
+#       - flex_base_joint_1_15
+#       - flex_base_joint_1_16
+#       - flex_base_joint_1_21
+#       - flex_base_joint_1_22
+#       - flex_base_joint_1_23
+#       - flex_base_joint_1_24
+#       - flex_base_joint_1_25
+#       - flex_base_joint_1_26
+#       - flex_base_joint_1_31
+#       - flex_base_joint_1_32
+#       - flex_base_joint_1_33
+#       - flex_base_joint_1_34
+#       - flex_base_joint_1_35
+#       - flex_base_joint_1_36
+#       - flex_base_joint_1_41
+#       - flex_base_joint_1_42
+#       - flex_base_joint_1_43
+#       - flex_base_joint_1_44
+#       - flex_base_joint_1_45
+#       - flex_base_joint_1_46
+#       - flex_base_joint_1_51
+#       - flex_base_joint_1_52
+#       - flex_base_joint_1_53
+#       - flex_base_joint_1_54
+#       - flex_base_joint_1_55
+#       - flex_base_joint_1_56
+#       - flex_base_joint_1_61
+#       - flex_base_joint_1_62
+#       - flex_base_joint_1_63
+#       - flex_base_joint_1_64
+#       - flex_base_joint_1_65
+#       - flex_base_joint_1_66
+#       - magnet_joint_1_11_x
+#       - magnet_joint_1_12_x
+#       - magnet_joint_1_13_x
+#       - magnet_joint_1_14_x
+#       - magnet_joint_1_15_x
+#       - magnet_joint_1_16_x
+#       - magnet_joint_1_21_x
+#       - magnet_joint_1_22_x
+#       - magnet_joint_1_23_x
+#       - magnet_joint_1_24_x
+#       - magnet_joint_1_25_x
+#       - magnet_joint_1_26_x
+#       - magnet_joint_1_31_x
+#       - magnet_joint_1_32_x
+#       - magnet_joint_1_33_x
+#       - magnet_joint_1_34_x
+#       - magnet_joint_1_35_x
+#       - magnet_joint_1_36_x
+#       - magnet_joint_1_41_x
+#       - magnet_joint_1_42_x
+#       - magnet_joint_1_43_x
+#       - magnet_joint_1_44_x
+#       - magnet_joint_1_45_x
+#       - magnet_joint_1_46_x
+#       - magnet_joint_1_51_x
+#       - magnet_joint_1_52_x
+#       - magnet_joint_1_53_x
+#       - magnet_joint_1_54_x
+#       - magnet_joint_1_55_x
+#       - magnet_joint_1_56_x
+#       - magnet_joint_1_61_x
+#       - magnet_joint_1_62_x
+#       - magnet_joint_1_63_x
+#       - magnet_joint_1_64_x
+#       - magnet_joint_1_65_x
+#       - magnet_joint_1_66_x
+#       - magnet_joint_1_11_y
+#       - magnet_joint_1_12_y
+#       - magnet_joint_1_13_y
+#       - magnet_joint_1_14_y
+#       - magnet_joint_1_15_y
+#       - magnet_joint_1_16_y
+#       - magnet_joint_1_21_y
+#       - magnet_joint_1_22_y
+#       - magnet_joint_1_23_y
+#       - magnet_joint_1_24_y
+#       - magnet_joint_1_25_y
+#       - magnet_joint_1_26_y
+#       - magnet_joint_1_31_y
+#       - magnet_joint_1_32_y
+#       - magnet_joint_1_33_y
+#       - magnet_joint_1_34_y
+#       - magnet_joint_1_35_y
+#       - magnet_joint_1_36_y
+#       - magnet_joint_1_41_y
+#       - magnet_joint_1_42_y
+#       - magnet_joint_1_43_y
+#       - magnet_joint_1_44_y
+#       - magnet_joint_1_45_y
+#       - magnet_joint_1_46_y
+#       - magnet_joint_1_51_y
+#       - magnet_joint_1_52_y
+#       - magnet_joint_1_53_y
+#       - magnet_joint_1_54_y
+#       - magnet_joint_1_55_y
+#       - magnet_joint_1_56_y
+#       - magnet_joint_1_61_y
+#       - magnet_joint_1_62_y
+#       - magnet_joint_1_63_y
+#       - magnet_joint_1_64_y
+#       - magnet_joint_1_65_y
+#       - magnet_joint_1_66_y
+#     flex_base_joint_1_11:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_12:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_13:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_14:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_15:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_16:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_21:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_22:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_23:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_24:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_25:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_26:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_31:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_32:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_33:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_34:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_35:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_36:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_41:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_42:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_43:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_44:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_45:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_46:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_51:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_52:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_53:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_54:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_55:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_56:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_61:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_62:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_63:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_64:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_65:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     flex_base_joint_1_66:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_11_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_12_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_13_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_14_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_15_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_16_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_21_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_22_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_23_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_24_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_25_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_26_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_31_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_32_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_33_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_34_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_35_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_36_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_41_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_42_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_43_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_44_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_45_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_46_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_51_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_52_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_53_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_54_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_55_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_56_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_61_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_62_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_63_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_64_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_65_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_66_x:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_11_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_12_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_13_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_14_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_15_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_16_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_21_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_22_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_23_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_24_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_25_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_26_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_31_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_32_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_33_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_34_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_35_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_36_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_41_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_42_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_43_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_44_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_45_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_46_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_51_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_52_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_53_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_54_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_55_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_56_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_61_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_62_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_63_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_64_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_65_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}
+#     magnet_joint_1_66_y:
+#       pid: {p: 0.05, i: 0.0, d: 0.0}

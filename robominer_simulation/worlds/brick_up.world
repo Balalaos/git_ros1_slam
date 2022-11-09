@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+<world name="default">
+
+    <include>
+        <uri>model://sun</uri>
+    </include>
+
+    <gravity>0 0 -9.81</gravity>
+    <include>
+        <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Terrain model -->
+    <model name="brick">
+      <include>
+        <uri>model://normal_brick</uri>
+        <pose> 0.5 0 0 0 0 0</pose>
+        <static>1</static>
+      </include>
+    </model>
+
+    <physics name="default_physics" default="true" type="ode">
+      <max_step_size>0.005</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>200</real_time_update_rate>
+      <ode>
+        <constraints>
+          <cfm>0</cfm>
+          <erp>0.2</erp>
+        </constraints>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+          <sor>0.8</sor>
+          <friction_model>cone_model</friction_model>
+        </solver>
+      </ode>
+    </physics>
+
+
+	
+</world>
+</sdf>
