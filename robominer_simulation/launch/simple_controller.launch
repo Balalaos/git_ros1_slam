@@ -1,5 +1,0 @@
-<launch>
-  <rosparam command="load" file="$(find robominer_simulation)/config/simple_controller.yaml" />
-  
-  <node name="simple_controller" pkg="robominer_simulation" type="PDController.py" />
-</launch>
